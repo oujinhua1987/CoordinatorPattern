@@ -12,6 +12,11 @@
 		5C4D85E5223F4DE000C9A790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D85E3223F4DE000C9A790 /* Main.storyboard */; };
 		5C4D85E7223F4DE200C9A790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D85E6223F4DE200C9A790 /* Assets.xcassets */; };
 		5C4D85EA223F4DE200C9A790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D85E8223F4DE200C9A790 /* LaunchScreen.storyboard */; };
+		5CE9F1AB22419C5A006ECCAB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9F1AA22419C5A006ECCAB /* Coordinator.swift */; };
+		5CE9F1AD22419D17006ECCAB /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9F1AC22419D17006ECCAB /* Storyboarded.swift */; };
+		5CE9F1AF22419E8C006ECCAB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9F1AE22419E8C006ECCAB /* MainCoordinator.swift */; };
+		5CE9F1B32241A077006ECCAB /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9F1B22241A077006ECCAB /* CreateAccountViewController.swift */; };
+		5CE9F1B52241A542006ECCAB /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9F1B42241A542006ECCAB /* BuyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		5C4D85E6223F4DE200C9A790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4D85E9223F4DE200C9A790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C4D85EB223F4DE200C9A790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE9F1AA22419C5A006ECCAB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5CE9F1AC22419D17006ECCAB /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		5CE9F1AE22419E8C006ECCAB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		5CE9F1B22241A077006ECCAB /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		5CE9F1B42241A542006ECCAB /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				5C4D85E6223F4DE200C9A790 /* Assets.xcassets */,
 				5C4D85E8223F4DE200C9A790 /* LaunchScreen.storyboard */,
 				5C4D85EB223F4DE200C9A790 /* Info.plist */,
+				5CE9F1AA22419C5A006ECCAB /* Coordinator.swift */,
+				5CE9F1AC22419D17006ECCAB /* Storyboarded.swift */,
+				5CE9F1AE22419E8C006ECCAB /* MainCoordinator.swift */,
+				5CE9F1B42241A542006ECCAB /* BuyViewController.swift */,
+				5CE9F1B22241A077006ECCAB /* CreateAccountViewController.swift */,
 			);
 			path = CoordinatorPattern;
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE9F1B32241A077006ECCAB /* CreateAccountViewController.swift in Sources */,
 				5C4D85E2223F4DE000C9A790 /* ViewController.swift in Sources */,
 				5C4D85E0223F4DE000C9A790 /* AppDelegate.swift in Sources */,
+				5CE9F1AB22419C5A006ECCAB /* Coordinator.swift in Sources */,
+				5CE9F1AF22419E8C006ECCAB /* MainCoordinator.swift in Sources */,
+				5CE9F1B52241A542006ECCAB /* BuyViewController.swift in Sources */,
+				5CE9F1AD22419D17006ECCAB /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,12 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N2YGP78K;
 				INFOPLIST_FILE = CoordinatorPattern/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xx.CoordinatorPattern;
+				PRODUCT_BUNDLE_IDENTIFIER = com.x.coordinator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,12 +319,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N2YGP78K;
 				INFOPLIST_FILE = CoordinatorPattern/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xx.CoordinatorPattern;
+				PRODUCT_BUNDLE_IDENTIFIER = com.x.coordinator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
